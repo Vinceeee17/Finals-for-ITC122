@@ -1,0 +1,153 @@
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.bg {
+    background-color: #000000d3;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+}
+
+.l {
+    width: 90px;
+    opacity: 91%;
+}
+
+.c {
+    width: 75%;
+    margin: auto;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c ul {
+    padding: 0;
+}
+
+.c ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.c ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: color 0.3s;
+}
+
+.c ul li a:hover {
+    color: #8b705B; 
+}
+
+.c ul li::after {
+    content: '';
+    height: 2px; 
+    width: 0; 
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    background-color: #8b705B; 
+    transition: width 0.5s; 
+}
+
+.c ul li:hover::after {
+    width: 100%;
+}
+
+
+/* Homepage */
+.content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.60)), URL(bg1.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.cc {
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    transform: translateX(-27%);
+    margin-left: 10px;
+}
+
+.cc h1 {
+    font-size: 90px;
+    margin-top: -7%;
+    margin-left: 40px;
+    color: #997950;
+}
+
+.cc h2 {
+    padding: 1%;
+    color: #8b705B;
+}
+
+.cc button {
+    width: 280px;
+    color: #8b705B;
+}
+
+.cc button {
+    border-radius: 35px;
+    border: 1px solid transparent;
+    padding: 10px;
+    margin: 10px;
+    width: 325px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+    color: #8b705B;
+}
+
+.cc button a {
+    text-decoration: none;
+    color: white;
+}
+
+.cc button span {
+    background: #8b705B;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.cc button:hover span {
+    width: 100%;
+}
+
+.cc button:hover {
+    border: none;
+}
+
+footer {
+    text-align: right;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+}

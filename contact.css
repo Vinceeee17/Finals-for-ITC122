@@ -1,0 +1,145 @@
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.bg {
+    background-color: #000000d3; 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 15vh; 
+}
+
+.l {
+    width: 90px; /* Logo size */
+    opacity: 91%;
+}
+
+.c {
+    width: 75%; 
+    margin: auto; 
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c ul {
+    list-style: none; 
+}
+
+.c ul li {
+    display: inline-block;
+    margin: 0 10px; 
+    position: relative;
+    font-size: 21px; 
+    font-weight: bold; 
+}
+
+.c ul li a {
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color: white; 
+}
+
+.c ul li a:hover {
+    color: #8b705B; 
+}
+
+.c ul li::after {
+    content: '';
+    height: 2px; 
+    width: 0; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #8b705B;
+    transition: width 0.5s; 
+}
+.c ul li:hover::after {
+    width: 100%;
+}
+
+
+.cf {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), URL(contactbg.jpg); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; 
+}
+
+.cg {
+    width: 100%; 
+    position: absolute;
+    top: 35%; 
+    transform: translateX(-25%); 
+    text-align: center; 
+}
+
+.cg h1 {
+    font-size: 90px; 
+    color: #997950; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.cg p {
+    font-size: 20px; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.cont {
+    text-align: center; 
+}
+
+.cont ul {
+    list-style: none; 
+}
+
+.cont ul li {
+    font-size: 21px; 
+    font-weight: bold; 
+    margin: 10px; 
+    color: rgb(255, 255, 255);
+}
+
+.cont img {
+    height: 50px; 
+    width: 60px; 
+}
+
+.cont ul li a {
+    text-decoration: none; 
+    text-transform: uppercase; 
+    color: rgb(255, 255, 255); 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+}
+.cont ul li a:hover {
+    color: #8b705B; 
+}
+
+.cont ul li::after {
+    content: '';
+    height: 2px; 
+    width: 0; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #8b705B;
+    transition: width 0.5s; 
+}
+
+footer {
+    text-align: right; 
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    font-size: 14px; 
+    color: #666; 
+    width: 100%; 
+}
